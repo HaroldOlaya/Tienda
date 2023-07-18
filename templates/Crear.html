@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear usuario</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'adm.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+
+</head>
+<body>
+<div style="margin: 100px 0 0 850px;">
+    <div class="card w-50">
+      <div class="card-body">
+          <form action="/crear" method="post" >
+              <div class="input-group my auto">
+                <input type="text" name="nombreNuevo"placeholder="Usuario" class="form-control" id="inputGroup-sizing-lg">
+              </div>
+              <div>
+                  <input type="password" name="contraNueva" placeholder="Contraseña" class="form-control">
+              </div>
+              <div class="form-group">
+                  <select class="form-select" name="opcion" aria-label="Default select example">
+                      <option selected>Tipo de usuario</option>
+                      <option value=1>Administrador</option>
+                      <option value=0>Cliente</option>
+                  </select>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-outline-success btn-block ">Crear usuario</font></font></button>
+              </div>
+              <div>
+                  <a class="nav-link " href="/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Volver al inicio</font></font></a>
+              </div>
+          </form>
+      </div>
+    </div>
+</div>
+</body>
+</html>

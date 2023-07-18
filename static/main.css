@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    background-image: url("img/fondo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.letra{
+    font-family: 'Roboto Condensed', sans-serif;
+}

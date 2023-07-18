@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesion</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'main.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div style="margin: 100px 0 0 850px;">
+    <div class="card w-50">
+      <div class="card-body">
+          <form action="/verificar" method="post">
+              <P>Login</P>
+              <div class="input-group my auto">
+                <input type="text" name="nombreUsuario"placeholder="Usuario" class="form-control" id="inputGroup-sizing-lg" autofocus>
+              </div>
+              <div>
+                  <input type="password" name="contra" placeholder="Contraseña" class="form-control">
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-outline-success btn-block ">Iniciar sesion</font></font></button>
+              </div>
+              <div>
+                  <a class="nav-link " href="/crear"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crear usuario</font></font></a>
+              </div>
+          </form>
+      </div>
+    </div>
+</div>
+</body>
+</html>

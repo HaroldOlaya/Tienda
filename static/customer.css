@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    background-image: url("img/fondocli.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.containe{
+    top:100px;
+    display:flex;
+    justify-content:center;
+}
+.ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1{
+color:white;
+}
+label{
+    color:blue;
+}

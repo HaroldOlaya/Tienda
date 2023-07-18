@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    background-image: url("img/fondoadm.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+color:white;
+}
+.ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.containe{
+    display:flex;
+    top:100px;
+    justify-content:center;
+    align-items:center;
+
+}
