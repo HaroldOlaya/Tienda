@@ -30,7 +30,7 @@ class producto(db.Base):
     imagen=Column(String)
 
 
-    def __int__(self,nombreDelProducto,cantidadTotal,cantidadDisponible,cantidadVendida,precio,ubicacion,imagen):
+    def __init__(self,nombreDelProducto,cantidadTotal,cantidadDisponible,cantidadVendida,precio,ubicacion,imagen):
         self.nombreDelProducto=nombreDelProducto
         self.cantidadTotal=cantidadTotal
         self.cantidadDisponible=cantidadDisponible
@@ -53,7 +53,7 @@ class proveedores(db.Base):
     email=Column(String(200))
     producto_id=Column(Integer,ForeignKey('producto.id_producto'))
 
-    def __int__(self, nombre, telefono, email):
+    def __init__(self, nombre, telefono, email):
         self.nombre = nombre
         self.telefono = telefono
         self.email = email
