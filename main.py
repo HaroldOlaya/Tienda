@@ -85,7 +85,7 @@ def añadirproducto():
         print(prove)
         db.session.add(prove)
         db.session.commit()
-    return render_template("añadirproducto.html")
+    return render_template("añadirProducto.html")
 @app.route("/eliminar-producto/<id>" )
 def eliminar(id):
     produc=db.session.query(producto).filter_by(id_producto=id).delete()
